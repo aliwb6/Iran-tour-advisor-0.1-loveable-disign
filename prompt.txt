@@ -1,12 +1,20 @@
-"My Vercel deployment is failing with a 404 on the root page. I need you to strictly align my project structure with Vercel/Vite standards. Please perform these actions:
+I'm encountering an error and reviewing the docs at https://vercel.com/docs/errors/not_found.md to understand what's happening.
 
-Relocate index.html: Move index.html from any subfolder (like src or public) to the root directory of the project.
+Please help me resolve this by:
 
-Fix Asset Links: In index.html, ensure the script tag points correctly to the main entry point (e.g., <script type="module" src="/src/main.tsx"></script>).
+1. **Suggest the fix**: Analyze my codebase context and propose what needs to be changed to resolve this error. If you do not have access to my codebase, ask me for the codebase and try to fix the error based on the information you have.
+2. **Explain the root cause**: Break down why this error occurred:
+   - What was the code actually doing vs. what it needed to do?
+   - What conditions triggered this specific error?
+   - What misconception or oversight led to this?
+3. **Teach the concept**: Help me understand the underlying principle:
+   - Why does this error exist and what is it protecting me from?
+   - What's the correct mental model for this concept?
+   - How does this fit into the broader framework/language design?
+4. **Show warning signs**: Help me recognize this pattern in the future:
+   - What should I look out for that might cause this again?
+   - Are there similar mistakes I might make in related scenarios?
+   - What code smells or patterns indicate this issue?
+5. **Discuss alternatives**: Explain if there are different valid approaches and their trade-offs
 
-Create vercel.json: Create a vercel.json file in the root with this content to handle routing:
-{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
-
-Check package.json: Ensure the build command is exactly "build": "vite build" and the base path in vite.config.ts is not blocking the root access.
-
-Verify Case Sensitivity: Ensure all file imports and names are lowercase where appropriate (crucial for Linux-to-Vercel deployments)."
+My goal is to fix the immediate issue while building lasting understanding so I can avoid and resolve similar errors independently in the future.
