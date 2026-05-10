@@ -1,0 +1,224 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@font-face {
+  font-family: "Khamenei";
+  src: url("/fonts/KHAMENEI REGULAR.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Khamenei";
+  src: url("/fonts/KHAMENEI BOLD.TTF") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Khamenei";
+  src: url("/fonts/KHAMENEI BLACK.TTF") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Khamenei";
+  src: url("/fonts/KHAMENEI WEB.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@custom-variant dark (&:is(.dark *));
+
+/* Iran Tour Advisor — Premium design system
+ * Palette: warm cream, deep navy, Persian turquoise, soft gold, warm sand
+ */
+
+@theme inline {
+  --font-sans: "Khamenei", "Vazirmatn", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Khamenei", "Vazirmatn", "Cormorant Garamond", serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 6px);
+  --radius-2xl: calc(var(--radius) + 14px);
+  --radius-3xl: calc(var(--radius) + 22px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-gold: var(--gold);
+  --color-turquoise: var(--turquoise);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+}
+
+:root {
+  --radius: 0.875rem;
+
+  /* Brand palette */
+  --cream: oklch(0.975 0.012 80);          /* warm cream background */
+  --ink: oklch(0.235 0.045 250);           /* deep Persian navy */
+  --turquoise: oklch(0.66 0.13 200);       /* Persian turquoise */
+  --gold: oklch(0.78 0.10 80);             /* soft gold */
+  --sand: oklch(0.78 0.05 70);             /* warm sand */
+
+  --background: var(--cream);
+  --foreground: var(--ink);
+
+  --card: oklch(1 0 0);
+  --card-foreground: var(--ink);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--ink);
+
+  --primary: var(--ink);
+  --primary-foreground: var(--cream);
+  --secondary: oklch(0.95 0.02 80);
+  --secondary-foreground: var(--ink);
+  --muted: oklch(0.94 0.015 80);
+  --muted-foreground: oklch(0.45 0.025 250);
+  --accent: var(--turquoise);
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.6 0.22 27);
+  --destructive-foreground: oklch(0.99 0 0);
+  --border: oklch(0.9 0.018 80);
+  --input: oklch(0.92 0.015 80);
+  --ring: var(--turquoise);
+
+  /* Gradients & shadows */
+  --gradient-hero: linear-gradient(180deg, color-mix(in oklab, var(--ink) 0%, transparent) 0%, color-mix(in oklab, var(--ink) 80%, transparent) 100%);
+  --gradient-gold: linear-gradient(135deg, var(--gold), color-mix(in oklab, var(--gold) 60%, var(--turquoise)));
+  --gradient-radial: radial-gradient(ellipse at top, color-mix(in oklab, var(--turquoise) 18%, transparent), transparent 60%);
+
+  --shadow-soft: 0 1px 2px oklch(0 0 0 / 0.04), 0 8px 24px -12px oklch(0 0 0 / 0.10);
+  --shadow-luxe: 0 30px 60px -30px color-mix(in oklab, var(--ink) 40%, transparent), 0 18px 36px -18px oklch(0 0 0 / 0.12);
+  --shadow-glow: 0 0 0 1px color-mix(in oklab, var(--turquoise) 25%, transparent), 0 20px 40px -20px color-mix(in oklab, var(--turquoise) 50%, transparent);
+
+  --transition-smooth: 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.dark {
+  --background: oklch(0.16 0.025 250);
+  --foreground: oklch(0.97 0.01 80);
+  --card: oklch(0.21 0.03 250);
+  --card-foreground: oklch(0.97 0.01 80);
+  --popover: oklch(0.21 0.03 250);
+  --popover-foreground: oklch(0.97 0.01 80);
+  --primary: oklch(0.97 0.01 80);
+  --primary-foreground: oklch(0.18 0.03 250);
+  --secondary: oklch(0.25 0.03 250);
+  --secondary-foreground: oklch(0.97 0.01 80);
+  --muted: oklch(0.24 0.03 250);
+  --muted-foreground: oklch(0.7 0.02 250);
+  --accent: var(--turquoise);
+  --accent-foreground: oklch(0.99 0 0);
+  --border: oklch(1 0 0 / 0.08);
+  --input: oklch(1 0 0 / 0.12);
+  --ring: var(--turquoise);
+  --shadow-luxe: 0 30px 60px -30px oklch(0 0 0 / 0.6), 0 18px 36px -18px oklch(0 0 0 / 0.4);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, .font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
+  [dir="rtl"] body { font-family: "Vazirmatn", var(--font-sans); }
+}
+
+@layer utilities {
+  .container-luxe { @apply mx-auto w-full max-w-7xl px-6 md:px-10; }
+  .text-balance { text-wrap: balance; }
+  .glass {
+    background: color-mix(in oklab, var(--card) 70%, transparent);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid color-mix(in oklab, var(--foreground) 8%, transparent);
+  }
+  .shadow-luxe { box-shadow: var(--shadow-luxe); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+  .gradient-gold { background-image: var(--gradient-gold); }
+  .text-gold { color: var(--gold); }
+  .bg-ink { background-color: var(--ink); }
+  .text-ink { color: var(--ink); }
+  .bg-cream { background-color: var(--cream); }
+  .border-gold { border-color: var(--gold); }
+  .ring-turquoise { --tw-ring-color: var(--turquoise); }
+
+  /* Persian tile pattern as decorative SVG */
+  .pattern-persian {
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'><g fill='none' stroke='%23288a9c' stroke-width='1' opacity='0.35'><path d='M40 4l8 16 18 2-13 12 4 18-17-9-17 9 4-18-13-12 18-2z'/><circle cx='40' cy='40' r='6'/></g></svg>");
+    background-size: 80px 80px;
+  }
+
+  .reveal { opacity: 0; transform: translateY(24px); animation: reveal 900ms var(--transition-smooth) forwards; }
+  .reveal-delay-1 { animation-delay: 120ms; }
+  .reveal-delay-2 { animation-delay: 240ms; }
+  .reveal-delay-3 { animation-delay: 360ms; }
+
+  .hover-lift { transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 500ms; }
+  .hover-lift:hover { transform: translateY(-6px); box-shadow: var(--shadow-luxe); }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 400ms ease;
+  }
+  .link-underline:hover { background-size: 100% 1px; }
+}
+
+@keyframes reveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+.animate-float { animation: float-slow 6s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.shimmer-text {
+  background: linear-gradient(90deg, var(--gold) 0%, color-mix(in oklab, var(--gold) 50%, white) 50%, var(--gold) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
