@@ -1,2 +1,13 @@
-I will use Persian and Arabic fonts and the entire site with this font that I am talking about. The header of the site
-path font : home/alireza/Desktop/KHAMENEI Fonts.zip
+"I am getting a 404 NOT_FOUND error on Vercel after a successful deployment. My project is a Vite-based application (I see vite.config.ts and package.json in my root).
+
+Please check and fix the following:
+
+Ensure index.html is in the correct location (root directory) for a Vite project so Vercel can find it.
+
+Check package.json to ensure the build script is correctly set to vite build.
+
+Verify if there are any path issues in vite.config.ts that might prevent the production build from generating the correct assets in the dist folder.
+
+If I'm using client-side routing (like React Router), please add a vercel.json file to the root with the necessary rewrites to handle SPAs and prevent 404s on page refresh.
+
+My environment is Arch Linux and I'm deploying to Vercel."
