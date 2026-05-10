@@ -1,13 +1,12 @@
-"I am getting a 404 NOT_FOUND error on Vercel after a successful deployment. My project is a Vite-based application (I see vite.config.ts and package.json in my root).
+"My Vercel deployment is failing with a 404 on the root page. I need you to strictly align my project structure with Vercel/Vite standards. Please perform these actions:
 
-Please check and fix the following:
+Relocate index.html: Move index.html from any subfolder (like src or public) to the root directory of the project.
 
-Ensure index.html is in the correct location (root directory) for a Vite project so Vercel can find it.
+Fix Asset Links: In index.html, ensure the script tag points correctly to the main entry point (e.g., <script type="module" src="/src/main.tsx"></script>).
 
-Check package.json to ensure the build script is correctly set to vite build.
+Create vercel.json: Create a vercel.json file in the root with this content to handle routing:
+{ "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }] }
 
-Verify if there are any path issues in vite.config.ts that might prevent the production build from generating the correct assets in the dist folder.
+Check package.json: Ensure the build command is exactly "build": "vite build" and the base path in vite.config.ts is not blocking the root access.
 
-If I'm using client-side routing (like React Router), please add a vercel.json file to the root with the necessary rewrites to handle SPAs and prevent 404s on page refresh.
-
-My environment is Arch Linux and I'm deploying to Vercel."
+Verify Case Sensitivity: Ensure all file imports and names are lowercase where appropriate (crucial for Linux-to-Vercel deployments)."
