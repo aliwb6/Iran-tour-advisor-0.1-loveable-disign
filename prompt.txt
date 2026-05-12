@@ -1,20 +1,48 @@
-I'm encountering an error and reviewing the docs at https://vercel.com/docs/errors/not_found.md to understand what's happening.
+I have a 3-language website (Persian, English, Arabic) and I want to change all fonts 
+across the entire site to use a custom font called "Khamenei" font.
 
-Please help me resolve this by:
+The font files are located at:
+/home/alireza/Desktop/KHAMENEI Fontes.zip
 
-1. **Suggest the fix**: Analyze my codebase context and propose what needs to be changed to resolve this error. If you do not have access to my codebase, ask me for the codebase and try to fix the error based on the information you have.
-2. **Explain the root cause**: Break down why this error occurred:
-   - What was the code actually doing vs. what it needed to do?
-   - What conditions triggered this specific error?
-   - What misconception or oversight led to this?
-3. **Teach the concept**: Help me understand the underlying principle:
-   - Why does this error exist and what is it protecting me from?
-   - What's the correct mental model for this concept?
-   - How does this fit into the broader framework/language design?
-4. **Show warning signs**: Help me recognize this pattern in the future:
-   - What should I look out for that might cause this again?
-   - Are there similar mistakes I might make in related scenarios?
-   - What code smells or patterns indicate this issue?
-5. **Discuss alternatives**: Explain if there are different valid approaches and their trade-offs
+Please do the following:
 
-My goal is to fix the immediate issue while building lasting understanding so I can avoid and resolve similar errors independently in the future.
+1. Extract the zip file at /home/alireza/Desktop/KHAMENEI Fontes.zip
+   and check the exact font file names inside
+
+2. Copy all .ttf font files into the project at: public/fonts/ directory
+
+3. Convert or reference them directly as TTF in @font-face 
+   (no conversion needed, TTF works in modern browsers)
+
+4. In the global CSS file (src/index.css), add @font-face like this example:
+   @font-face {
+     font-family: 'Khamenei';
+     src: url('/fonts/FILENAME.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+   }
+   (repeat for each weight/style variant found in the zip)
+
+5. Apply the font globally:
+   html, body, * {
+     font-family: 'Khamenei', sans-serif !important;
+   }
+
+6. In tailwind.config.ts or tailwind.config.js add:
+   theme: {
+     extend: {
+       fontFamily: {
+         sans: ['Khamenei', 'sans-serif'],
+       }
+     }
+   }
+
+7. Since the site supports Persian, Arabic, and English:
+   - Add font-display: swap to @font-face for performance
+   - Make sure no other font-family is overriding in any component
+
+8. Search the entire codebase for any hardcoded font-family references 
+   and replace them with the Khamenei font
+
+The actual file names must be checked from the zip before writing code.
+Use the real filenames found in the zip, do not guess.

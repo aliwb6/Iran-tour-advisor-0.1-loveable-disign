@@ -142,18 +142,8 @@
   --shadow-luxe: 0 30px 60px -30px oklch(0 0 0 / 0.6), 0 18px 36px -18px oklch(0 0 0 / 0.4);
 }
 
-@layer base {
-  * { border-color: var(--color-border); }
-  html { scroll-behavior: smooth; }
-  body {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    font-family: var(--font-sans);
-    font-feature-settings: "ss01", "cv11";
-    -webkit-font-smoothing: antialiased;
-  }
-  h1, h2, h3, .font-display { font-family: var(--font-display); letter-spacing: -0.01em; }
-  [dir="rtl"] body { font-family: "Vazirmatn", var(--font-sans); }
+html, body, * {
+  font-family: 'Khamenei', sans-serif !important;
 }
 
 @layer utilities {
