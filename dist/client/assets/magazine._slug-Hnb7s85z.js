@@ -1,0 +1,1 @@
+import{j as r}from"./index-BKYcGeXW.js";import{E as o}from"./magazine._slug-BVwFR1K-.js";import"./Footer-VcxljE2E.js";import"./arrow-left-CyYgE3_M.js";const e=()=>r.jsx(o,{});export{e as errorComponent};

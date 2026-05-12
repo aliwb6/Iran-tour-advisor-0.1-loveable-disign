@@ -1,0 +1,1 @@
+import{j as o}from"./index-BKYcGeXW.js";import{E as t}from"./magazine._slug-BVwFR1K-.js";import"./Footer-VcxljE2E.js";import"./arrow-left-CyYgE3_M.js";const s=()=>o.jsx(t,{});export{s as notFoundComponent};

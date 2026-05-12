@@ -1,0 +1,1 @@
+import{j as s}from"./index-BKYcGeXW.js";import{H as r,F as o}from"./Footer-VcxljE2E.js";const t=({error:e})=>s.jsxs("div",{className:"min-h-screen bg-background",children:[s.jsx(r,{}),s.jsx("main",{className:"container-luxe pt-40 pb-20",children:s.jsx("h1",{className:"font-display text-3xl",children:e.message})}),s.jsx(o,{})]});export{t as errorComponent};

@@ -1,57 +1,20 @@
 
-I need to implement the following changes and features to my existing Iran Tour Advisor website. The site is already partially built — please make these modifications:
+There is a build error in the project. Fix the TypeScript syntax error in src/data/site.ts.
+Error:
+/opt/buildhome/repo/src/data/site.ts:143:0: ERROR: Unexpected "}"
+Context from build log:
+141 |      date: string;
+142 |    }[];
+143 |  };
+     |  ^
+144 |  
+145 |  export const guides: Guide[] = [
+There is an unexpected closing brace } at line 143 in src/data/site.ts. This is likely a mismatched or extra } inside a TypeScript interface or type definition.
+Please:
 
-1. Package Detail Pages (کلیک روی پکیج‌ها)
-Each travel package card on the packages page must be clickable and navigate to a dedicated detail page. The detail page should include:
+Open src/data/site.ts
+Find the type/interface definition around lines 138–145
+Fix the mismatched braces so the TypeScript is valid
+Make sure the file compiles without errors
+Do not change any other logic or data in the file
 
-Full package title and description
-List of cities covered
-Duration of the trip
-Day-by-day itinerary (what happens each day, which locations are visited)
-Whether hotel and transportation are included (clearly marked)
-What the tourist will gain/learn from this package (outcomes)
-A comments/reviews section where tourists can leave their experience and rating
-A "Book Now" or "Contact Us" CTA button
-
-
-2. Guide Profile Detail Pages (کلیک روی راهنمایان)
-Each guide card on the guides page must be clickable and open a full profile page. The guide profile page should include:
-
-Full name and profile photo
-Contact information
-Languages spoken and skills/expertise
-A personal bio paragraph
-A suggested travel plan/itinerary they offer for their city
-Star rating (average score from tourist reviews)
-A section for tourists to submit a rating and review
-
-Guides should be sorted by rating — highest rated guides appear first on the guides listing page.
-
-3. AI Chatbot — Separate Full Page
-The chatbot currently opens as a sidebar panel. This must be changed:
-
-Remove the sidebar/overlay behavior completely
-The chatbot must have its own dedicated page (e.g. /chat or /ai-advisor)
-It should be accessible from the main navigation menu as a full page, styled consistently with the rest of the site
-The chatbot should ask users about their interests, profession, goals, and travel preferences, then recommend the most suitable package from the site's offerings
-If no exact match exists, it should suggest the closest available package
-The chatbot must be connected to Claude API (or another major AI provider) for intelligent responses
-
-
-4. Custom Font — Apply Site-wide
-The entire website must use a custom Persian font. The font files are located at:
-/home/alireza/Desktop/KHAMENEI Fonts/
-This folder contains .ttf font files. Please:
-
-Load these fonts using @font-face in the CSS
-Apply this font globally across the entire site (all headings, body text, buttons, navigation, etc.)
-Make sure the font renders correctly for Persian (RTL) text
-Remove or override any previously used font
-
-
-5. General Notes
-
-The site is trilingual: Persian (FA), English (EN), and Arabic (AR) — ensure all new pages respect the active language and RTL/LTR direction accordingly
-Design style must remain modern, elegant, and Iranian-themed — consistent with the existing design
-All new pages must be fully responsive (mobile + desktop)
-Maintain the existing routing structure and add new routes cleanly

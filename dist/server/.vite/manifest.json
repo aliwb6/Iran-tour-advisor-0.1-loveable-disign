@@ -1,0 +1,405 @@
+{
+  "%23tanstack-start-plugin-adapters": {
+    "file": "assets/__23tanstack-start-plugin-adapters-Cwee5PKy.js",
+    "name": "__23tanstack-start-plugin-adapters",
+    "src": "%23tanstack-start-plugin-adapters",
+    "isDynamicEntry": true
+  },
+  "/home/alireza/Desktop/iran-tour-advisor-0.1 loveable/src/styles.css": {
+    "file": "assets/styles-CKERmknt.css",
+    "src": "/home/alireza/Desktop/iran-tour-advisor-0.1 loveable/src/styles.css"
+  },
+  "_Footer-CpDR_PGs.js": {
+    "file": "assets/Footer-CpDR_PGs.js",
+    "name": "Footer",
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_arrow-left-C2vGYm0W.js": {
+    "file": "assets/arrow-left-C2vGYm0W.js",
+    "name": "arrow-left",
+    "imports": [
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_arrow-right-Bp8xgqxp.js": {
+    "file": "assets/arrow-right-Bp8xgqxp.js",
+    "name": "arrow-right",
+    "imports": [
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_arrow-up-right-vSRUBfLA.js": {
+    "file": "assets/arrow-up-right-vSRUBfLA.js",
+    "name": "arrow-up-right",
+    "imports": [
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_clock-CgUOs2sO.js": {
+    "file": "assets/clock-CgUOs2sO.js",
+    "name": "clock",
+    "imports": [
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_magazine._slug-Cn9jh0Yd.js": {
+    "file": "assets/magazine._slug-Cn9jh0Yd.js",
+    "name": "magazine._slug",
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_arrow-left-C2vGYm0W.js"
+    ]
+  },
+  "_map-C_82042K.js": {
+    "file": "assets/map-C_82042K.js",
+    "name": "map",
+    "imports": [
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_router-Vxp-61Ug.js": {
+    "file": "assets/router-Vxp-61Ug.js",
+    "name": "router",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js"
+    ],
+    "dynamicImports": [
+      "src/routes/packages.tsx?tsr-split=component",
+      "src/routes/magazine.tsx?tsr-split=component",
+      "src/routes/guides.tsx?tsr-split=component",
+      "src/routes/chat.tsx?tsr-split=component",
+      "src/routes/about.tsx?tsr-split=component",
+      "src/routes/index.tsx?tsr-split=component",
+      "src/routes/packages.$slug.tsx?tsr-split=component",
+      "src/routes/packages.$slug.tsx?tsr-split=errorComponent",
+      "src/routes/packages.$slug.tsx?tsr-split=notFoundComponent",
+      "src/routes/magazine.$slug.tsx?tsr-split=notFoundComponent",
+      "src/routes/magazine.$slug.tsx?tsr-split=errorComponent",
+      "src/routes/magazine.$slug.tsx?tsr-split=component",
+      "src/routes/guides.$slug.tsx?tsr-split=component",
+      "src/routes/guides.$slug.tsx?tsr-split=errorComponent",
+      "src/routes/guides.$slug.tsx?tsr-split=notFoundComponent"
+    ],
+    "assets": [
+      "assets/pkg-shiraz-BtpycYT2.jpg",
+      "assets/pkg-yazd-CO2Fz8im.jpg",
+      "assets/pkg-isfahan-BvqdFANT.jpg",
+      "assets/guide-1-BERTsTq2.jpg",
+      "assets/guide-2-MAhRRasd.jpg",
+      "assets/guide-3-CNETxooa.jpg",
+      "assets/cat-architecture-Cu2-2FWz.jpg",
+      "assets/cat-desert-DDUH4Wmr.jpg",
+      "assets/cat-food-BzrtvS1x.jpg",
+      "assets/cat-bazaar-5LfJYve2.jpg",
+      "assets/cat-history-CzWrK9fE.jpg",
+      "assets/cat-nature-gX1YV7dW.jpg",
+      "assets/styles-CKERmknt.css"
+    ]
+  },
+  "_server-B79bSASJ.js": {
+    "file": "assets/server-B79bSASJ.js",
+    "name": "server",
+    "isDynamicEntry": true,
+    "dynamicImports": [
+      "tanstack-start-manifest:v",
+      "src/lib/chat.functions.ts?tss-serverfn-split",
+      "_router-Vxp-61Ug.js",
+      "src/start.ts",
+      "%23tanstack-start-plugin-adapters"
+    ]
+  },
+  "_star-DMa31Pb7.js": {
+    "file": "assets/star-DMa31Pb7.js",
+    "name": "star",
+    "imports": [
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "_worker-entry-BcBN6WY3.js": {
+    "file": "assets/worker-entry-BcBN6WY3.js",
+    "name": "worker-entry",
+    "dynamicImports": [
+      "_server-B79bSASJ.js"
+    ]
+  },
+  "src/assets/cat-architecture.jpg": {
+    "file": "assets/cat-architecture-Cu2-2FWz.jpg",
+    "src": "src/assets/cat-architecture.jpg"
+  },
+  "src/assets/cat-bazaar.jpg": {
+    "file": "assets/cat-bazaar-5LfJYve2.jpg",
+    "src": "src/assets/cat-bazaar.jpg"
+  },
+  "src/assets/cat-desert.jpg": {
+    "file": "assets/cat-desert-DDUH4Wmr.jpg",
+    "src": "src/assets/cat-desert.jpg"
+  },
+  "src/assets/cat-food.jpg": {
+    "file": "assets/cat-food-BzrtvS1x.jpg",
+    "src": "src/assets/cat-food.jpg"
+  },
+  "src/assets/cat-history.jpg": {
+    "file": "assets/cat-history-CzWrK9fE.jpg",
+    "src": "src/assets/cat-history.jpg"
+  },
+  "src/assets/cat-nature.jpg": {
+    "file": "assets/cat-nature-gX1YV7dW.jpg",
+    "src": "src/assets/cat-nature.jpg"
+  },
+  "src/assets/guide-1.jpg": {
+    "file": "assets/guide-1-BERTsTq2.jpg",
+    "src": "src/assets/guide-1.jpg"
+  },
+  "src/assets/guide-2.jpg": {
+    "file": "assets/guide-2-MAhRRasd.jpg",
+    "src": "src/assets/guide-2.jpg"
+  },
+  "src/assets/guide-3.jpg": {
+    "file": "assets/guide-3-CNETxooa.jpg",
+    "src": "src/assets/guide-3.jpg"
+  },
+  "src/assets/hero-isfahan.jpg": {
+    "file": "assets/hero-isfahan-CLkPCMOn.jpg",
+    "src": "src/assets/hero-isfahan.jpg"
+  },
+  "src/assets/pkg-isfahan.jpg": {
+    "file": "assets/pkg-isfahan-BvqdFANT.jpg",
+    "src": "src/assets/pkg-isfahan.jpg"
+  },
+  "src/assets/pkg-shiraz.jpg": {
+    "file": "assets/pkg-shiraz-BtpycYT2.jpg",
+    "src": "src/assets/pkg-shiraz.jpg"
+  },
+  "src/assets/pkg-yazd.jpg": {
+    "file": "assets/pkg-yazd-CO2Fz8im.jpg",
+    "src": "src/assets/pkg-yazd.jpg"
+  },
+  "src/lib/chat.functions.ts?tss-serverfn-split": {
+    "file": "assets/chat.functions-CJUuhcRa.js",
+    "name": "chat.functions",
+    "src": "src/lib/chat.functions.ts?tss-serverfn-split",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js"
+    ]
+  },
+  "src/routes/about.tsx?tsr-split=component": {
+    "file": "assets/about-BZ4nmx5C.js",
+    "name": "about",
+    "src": "src/routes/about.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_Footer-CpDR_PGs.js",
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "src/routes/chat.tsx?tsr-split=component": {
+    "file": "assets/chat-69vI8qsb.js",
+    "name": "chat",
+    "src": "src/routes/chat.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_Footer-CpDR_PGs.js",
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "src/routes/guides.$slug.tsx?tsr-split=component": {
+    "file": "assets/guides._slug-Cy10xt60.js",
+    "name": "guides._slug",
+    "src": "src/routes/guides.$slug.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_star-DMa31Pb7.js"
+    ]
+  },
+  "src/routes/guides.$slug.tsx?tsr-split=errorComponent": {
+    "file": "assets/guides._slug-BYn7BFsE.js",
+    "name": "guides._slug",
+    "src": "src/routes/guides.$slug.tsx?tsr-split=errorComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_Footer-CpDR_PGs.js",
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "src/routes/guides.$slug.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/guides._slug-IsToHQvZ.js",
+    "name": "guides._slug",
+    "src": "src/routes/guides.$slug.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js"
+    ]
+  },
+  "src/routes/guides.tsx?tsr-split=component": {
+    "file": "assets/guides-BuAYthNv.js",
+    "name": "guides",
+    "src": "src/routes/guides.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_star-DMa31Pb7.js"
+    ]
+  },
+  "src/routes/index.tsx?tsr-split=component": {
+    "file": "assets/index-BSR86ME1.js",
+    "name": "index",
+    "src": "src/routes/index.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_Footer-CpDR_PGs.js",
+      "_router-Vxp-61Ug.js",
+      "_arrow-right-Bp8xgqxp.js",
+      "_map-C_82042K.js",
+      "_clock-CgUOs2sO.js",
+      "_arrow-up-right-vSRUBfLA.js",
+      "_star-DMa31Pb7.js"
+    ],
+    "assets": [
+      "assets/hero-isfahan-CLkPCMOn.jpg"
+    ]
+  },
+  "src/routes/magazine.$slug.tsx?tsr-split=component": {
+    "file": "assets/magazine._slug-DTigxoUp.js",
+    "name": "magazine._slug",
+    "src": "src/routes/magazine.$slug.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_arrow-left-C2vGYm0W.js",
+      "_clock-CgUOs2sO.js"
+    ]
+  },
+  "src/routes/magazine.$slug.tsx?tsr-split=errorComponent": {
+    "file": "assets/magazine._slug-DUPTbKdu.js",
+    "name": "magazine._slug",
+    "src": "src/routes/magazine.$slug.tsx?tsr-split=errorComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_magazine._slug-Cn9jh0Yd.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_arrow-left-C2vGYm0W.js"
+    ]
+  },
+  "src/routes/magazine.$slug.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/magazine._slug-B4pYUxD8.js",
+    "name": "magazine._slug",
+    "src": "src/routes/magazine.$slug.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_magazine._slug-Cn9jh0Yd.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_arrow-left-C2vGYm0W.js"
+    ]
+  },
+  "src/routes/magazine.tsx?tsr-split=component": {
+    "file": "assets/magazine-COeJu7rO.js",
+    "name": "magazine",
+    "src": "src/routes/magazine.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_arrow-up-right-vSRUBfLA.js",
+      "_clock-CgUOs2sO.js"
+    ]
+  },
+  "src/routes/packages.$slug.tsx?tsr-split=component": {
+    "file": "assets/packages._slug-BwtKneBD.js",
+    "name": "packages._slug",
+    "src": "src/routes/packages.$slug.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_map-C_82042K.js",
+      "_clock-CgUOs2sO.js",
+      "_arrow-right-Bp8xgqxp.js"
+    ]
+  },
+  "src/routes/packages.$slug.tsx?tsr-split=errorComponent": {
+    "file": "assets/packages._slug-DRML-5Cw.js",
+    "name": "packages._slug",
+    "src": "src/routes/packages.$slug.tsx?tsr-split=errorComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_Footer-CpDR_PGs.js",
+      "_router-Vxp-61Ug.js"
+    ]
+  },
+  "src/routes/packages.$slug.tsx?tsr-split=notFoundComponent": {
+    "file": "assets/packages._slug-B2pTnr8N.js",
+    "name": "packages._slug",
+    "src": "src/routes/packages.$slug.tsx?tsr-split=notFoundComponent",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js"
+    ]
+  },
+  "src/routes/packages.tsx?tsr-split=component": {
+    "file": "assets/packages-dmEI5fKp.js",
+    "name": "packages",
+    "src": "src/routes/packages.tsx?tsr-split=component",
+    "isDynamicEntry": true,
+    "imports": [
+      "_server-B79bSASJ.js",
+      "_router-Vxp-61Ug.js",
+      "_Footer-CpDR_PGs.js",
+      "_map-C_82042K.js",
+      "_clock-CgUOs2sO.js",
+      "_arrow-up-right-vSRUBfLA.js"
+    ]
+  },
+  "src/start.ts": {
+    "file": "assets/start-CqltOzCB.js",
+    "name": "start",
+    "src": "src/start.ts",
+    "isDynamicEntry": true,
+    "imports": [
+      "_worker-entry-BcBN6WY3.js"
+    ]
+  },
+  "tanstack-start-manifest:v": {
+    "file": "assets/_tanstack-start-manifest_v-Byi6CXh3.js",
+    "name": "_tanstack-start-manifest_v",
+    "src": "tanstack-start-manifest:v",
+    "isDynamicEntry": true
+  },
+  "virtual:cloudflare/worker-entry": {
+    "file": "index.js",
+    "name": "index",
+    "src": "virtual:cloudflare/worker-entry",
+    "isEntry": true,
+    "imports": [
+      "_worker-entry-BcBN6WY3.js"
+    ]
+  }
+}

@@ -135,12 +135,6 @@ export type Guide = {
     date: string;
   }[];
 };
-  reviews: {
-    rating: number;
-    comment: string;
-    date: string;
-  }[];
-};
 
 export const guides: Guide[] = [
   {
