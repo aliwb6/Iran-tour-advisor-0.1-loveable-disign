@@ -15,13 +15,10 @@ export function Header() {
     { to: "/guides", label: t("nav.guides") },
     { to: "/magazine", label: t("nav.magazine") },
     { to: "/about", label: t("nav.about") },
+    { to: "/chat", label: t("nav.plan") },
   ] as const;
 
-  const openChat = () => {
-    if (typeof window !== "undefined") window.dispatchEvent(new CustomEvent("open-chat"));
-  };
-
-  useEffect(() => {
+    useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -63,12 +60,6 @@ export function Header() {
 
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
-          <button
-            onClick={openChat}
-            className="hidden rounded-full bg-foreground px-5 py-2.5 text-xs font-medium uppercase tracking-[0.18em] text-background transition hover:bg-accent md:inline-flex"
-          >
-            {t("nav.plan")}
-          </button>
           <button
             className="grid h-10 w-10 place-items-center rounded-full border border-border lg:hidden"
             onClick={() => setOpen((o) => !o)}

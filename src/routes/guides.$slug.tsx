@@ -94,13 +94,76 @@ function GuideDetail() {
             <h2 className="mt-12 font-display text-3xl">{t("guide.about")}</h2>
             <p className="mt-4 text-base leading-relaxed text-foreground/85">{t(guide.bioKey)}</p>
 
-            <h2 className="mt-10 font-display text-3xl">{t("guide.skills")}</h2>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {guide.skills.map((s: string) => (
-                <span key={s} className="rounded-full border border-border bg-card px-4 py-2 text-xs">
-                  {s}
-                </span>
+            <h2 className="mt-10 font-display text-3xl">{t("guide.suggestedPlan")}</h2>
+            <div className="mt-4 space-y-4">
+              <div className="text-sm font-medium text-foreground/90">{guide.suggestedPlan.title}</div>
+              <div className="text-xs text-muted-foreground">{guide.suggestedPlan.duration}</div>
+              <p className="mt-2 text-sm text-muted-foreground">{guide.suggestedPlan.description}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {guide.suggestedPlan.highlights.map((h: string) => (
+                  <span key={h} className="rounded-full border border-border/60 bg-card px-3 py-1 text-xs">
+                    {h}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <h2 className="mt-10 font-display text-3xl">{t("guide.reviews")}</h2>
+            <div className="mt-4 space-y-6">
+              {guide.reviews.map((review) => (
+                <div key={review.date} className="border border-border/60 bg-card p-5 rounded-xl">
+                  <div className="flex items-center justify-between mb-3">
+                    <div className="flex items-center gap-2">
+                      <div className="flex h-8 w-8 items-center justify-center rounded-full bg-gold/20">
+                        <Star className="h-4 w-4 text-gold" />
+                      </div>
+                      <div className="text-sm font-medium">{review.rating}</div>
+                    </div>
+                    <div className="text-xs text-muted-foreground">{review.date}</div>
+                  </div>
+                  <p className="text-sm text-foreground/80">{review.comment}</p>
+                </div>
               ))}
+              
+              {/* Add review form */}
+              <div className="mt-6 pt-5 border-t border-border/60">
+                <h3 className="font-display text-xl mb-4">{t("guide.addReview")}</h3>
+                <form className="space-y-4">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="flex h-9 w-9 items-center justify-center rounded-full bg-gold/20">
+                      <Star className="h-5 w-5 text-gold" />
+                    </div>
+                    <div className="space-y-1">
+                      <label className="text-xs font-medium text-foreground/80">{t("guide.yourRating")}</label>
+                      <div className="flex gap-1">
+                        {[1, 2, 3, 4, 5].map((star) => (
+                          <button
+                            key={star}
+                            onClick={() => {}}
+                            className="h-5 w-5 flex-shrink-0 text-gold/30 hover:text-gold"
+                          >
+                            <Star className="h-4 w-4" />
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-1">{t("guide.yourComment")}</label>
+                    <textarea
+                      rows="4"
+                      className="w-full rounded-xl border border-bg-muted/60 bg-muted/20 px-4 py-3 text-sm focus:border-accent focus:outline-none"
+                      placeholder={t("guide.writeComment")}
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    className="w-full rounded-full bg-foreground px-6 py-3 text-sm font-medium text-background transition hover:bg-accent"
+                  >
+                    {t("guide.submitReview")}
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </div>

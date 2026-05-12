@@ -12,6 +12,9 @@ export const Route = createFileRoute("/guides")({
 
 function GuidesPage() {
   const { t } = useI18n();
+  // Sort guides by rating (highest first)
+  const sortedGuides = [...guides].sort((a, b) => b.rating - a.rating);
+  
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -20,7 +23,7 @@ function GuidesPage() {
         <h1 className="mt-3 font-display text-5xl md:text-6xl">{t("guide.title")}</h1>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {guides.map((g) => (
+          {sortedGuides.map((g) => (
             <Link
               key={g.slug}
               to="/guides/$slug"

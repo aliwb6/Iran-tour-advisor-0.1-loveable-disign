@@ -73,19 +73,29 @@ function PackageDetail() {
 
             <h2 className="mt-14 font-display text-3xl">{t("pkg.itinerary")}</h2>
             <ol className="mt-6 space-y-5">
-              {Array.from({ length: pkg.days }).map((_, i) => (
-                <li key={i} className="flex gap-5 rounded-2xl border border-border/60 bg-card p-5 shadow-soft">
+              {pkg.itinerary.map((day) => (
+                <li key={day.day} className="flex gap-5 rounded-2xl border border-border/60 bg-card p-5 shadow-soft">
                   <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-foreground text-sm text-background">
-                    {String(i + 1).padStart(2, "0")}
+                    {String(day.day).padStart(2, "0")}
                   </div>
                   <div>
-                    <div className="text-[10px] uppercase tracking-[0.3em] text-accent">Day {i + 1}</div>
-                    <div className="mt-1 font-display text-xl">{t(pkg.titleKey)} · {t(pkg.citiesKey).split("·")[i % t(pkg.citiesKey).split("·").length]?.trim() ?? "Iran"}</div>
-                    <p className="mt-2 text-sm text-muted-foreground">{t(pkg.descKey)}</p>
+                    <div className="text-[10px] uppercase tracking-[0.3em] text-accent">Day {day.day}</div>
+                    <div className="mt-1 font-display text-xl">{day.title}</div>
+                    <p className="mt-2 text-sm text-muted-foreground">{day.description}</p>
                   </div>
                 </li>
               ))}
             </ol>
+            
+            <h2 className="mt-14 font-display text-3xl">{t("pkg.outcomes")}</h2>
+            <ul className="mt-6 space-y-4 text-sm text-muted-foreground">
+              {pkg.outcomes.map((outcome) => (
+                <li key={outcome} className="flex items-center gap-3">
+                  <span className="h-3 w-3 flex-shrink-0 bg-accent rounded-full" />
+                  <span>{outcome}</span>
+                </li>
+              ))}
+            </ul>
 
             <h2 className="mt-14 font-display text-3xl">{t("pkg.includes")}</h2>
             <ul className="mt-6 grid gap-3 sm:grid-cols-2">
