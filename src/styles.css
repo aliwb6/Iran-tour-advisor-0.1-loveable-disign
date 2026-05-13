@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Khamenei";
-  src: url("/fonts/KHAMENEI REGULAR.TTF") format("truetype");
+  src: url("/fonts/KHAMENEI%20REGULAR.TTF") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -12,7 +12,15 @@
 
 @font-face {
   font-family: "Khamenei";
-  src: url("/fonts/KHAMENEI BOLD.TTF") format("truetype");
+  src: url("/fonts/KHAMENEI%20WEB.TTF") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Khamenei";
+  src: url("/fonts/KHAMENEI%20BOLD.TTF") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -20,16 +28,8 @@
 
 @font-face {
   font-family: "Khamenei";
-  src: url("/fonts/KHAMENEI BLACK.TTF") format("truetype");
+  src: url("/fonts/KHAMENEI%20BLACK.TTF") format("truetype");
   font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Khamenei";
-  src: url("/fonts/KHAMENEI WEB.TTF") format("truetype");
-  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }

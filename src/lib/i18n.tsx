@@ -63,6 +63,7 @@ const en: Dict = {
   "pkg.book": "Request this journey",
   "pkg.itinerary": "Day-by-day itinerary",
   "pkg.includes": "What's included",
+  "pkg.outcomes": "What you'll gain",
   "pkg.back": "← All journeys",
   "pkg.notFound": "Journey not found.",
 
@@ -232,6 +233,7 @@ const fa: Dict = {
   "pkg.book": "درخواست این سفر",
   "pkg.itinerary": "برنامه روز به روز",
   "pkg.includes": "شامل می‌شود",
+  "pkg.outcomes": "آنچه به دست می‌آورید",
   "pkg.back": "← همه سفرها",
   "pkg.notFound": "سفر پیدا نشد.",
 
@@ -394,6 +396,7 @@ const ar: Dict = {
   "pkg.book": "اطلب هذه الرحلة",
   "pkg.itinerary": "البرنامج اليومي",
   "pkg.includes": "ما يشمله",
+  "pkg.outcomes": "ما ستكسبه",
   "pkg.back": "← كل الرحلات",
   "pkg.notFound": "الرحلة غير موجودة.",
 
